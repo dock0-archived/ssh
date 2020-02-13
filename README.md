@@ -1,9 +1,8 @@
 dock0/ssh
 =======
 
-[![Automated Build](https://img.shields.io/docker/build/dock0/ssh.svg)](https://hub.docker.com/r/dock0/ssh/)
-[![Build Status](https://img.shields.io/travis/com/dock0/ssh.svg)](https://travis-ci.com/dock0/ssh)
-[![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dock0/ssh/Build)](https://github.com/dock0/ssh/actions))
+[![License](https://img.shields.io/github/license/dock0/ssh)](https://github.com/dock0/ssh/blob/master/LICENSE)
 
 Base SSH container, sets up my environment and keys.
 

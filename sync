@@ -1,17 +1,9 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
-cd /var/lib/ssh/cache/repo
-git pull
-
-CLASS_FILE='/var/lib/ssh/classes'
-if [[ -e $CLASS_FILE ]] ; then
-    CLASSES="$(cat $CLASS_FILE)"
-else
-    CLASSES='strong'
-fi
-for class in $CLASSES ; do
-    find "$class" -mindepth 1 -type f -exec cat {} \; 2>/dev/null | tee ../keys
-done
+cd /var/lib/ssh
+URL="$(cat key_url)"
+curl --fail -sSLo cache "${URL}" || true
+cat cache
 

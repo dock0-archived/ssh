@@ -1,9 +1,5 @@
 #!/bin/sh
 
-if [ -n "${NOMAD_PORT_sshd}" ] ; then
-    sed -i "s/Port 22/Port ${NOMAD_PORT_sshd}/" /etc/ssh/sshd_config
-fi
-
 ssh-keygen -A
 exec /usr/bin/sshd -D 2>&1
 
