@@ -5,7 +5,7 @@ RUN pacman -S --noconfirm --needed openssh
 ENV ADMIN akerl
 ENV KEY_URL https://id-ed25519.pub/groups/default.txt
 
-RUN useradd -d /var/lib/ssh -m ssh_key_sync
+RUN useradd -d /var/lib/ssh -M ssh_key_sync
 RUN mkdir -m=0700 /var/lib/ssh && chown ssh_key_sync /var/lib/ssh
 RUN echo "$KEY_URL" > /var/lib/ssh/key_url
 ADD sshd_config /etc/ssh/sshd_config
