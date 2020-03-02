@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/dock0/service/service:20200302-db445ef
+FROM docker.pkg.github.com/dock0/service/service:20200302-45d0191
 MAINTAINER akerl <me@lesaker.org>
 RUN pacman -S --noconfirm --needed openssh
 
