@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/dock0/service/service:20200307-fbbadbe
+FROM docker.pkg.github.com/dock0/service/service:20200307-331bbb5
 MAINTAINER akerl <me@lesaker.org>
 RUN pacman -S --noconfirm --needed openssh
 
